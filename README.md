@@ -1,2 +1,2 @@
 # node-deps-qt-qml
-Qt Qml binaries.
+Common binary dependencies for qt-dependent runtime
