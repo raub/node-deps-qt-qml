@@ -1,6 +1,6 @@
 'use strict';
 
-require('node-deps-qt-gui');
+require('node-deps-qt-gui-raub');
 
 const os = require('os');
 
