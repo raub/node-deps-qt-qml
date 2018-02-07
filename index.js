@@ -8,6 +8,7 @@ const gui = require('deps-qt-gui-raub');
 
 
 module.exports = {
+	gui,
+	core : gui.core,
 	...tools.paths(__dirname),
-	...{ core: gui.core, gui: gui.bin }
 };
