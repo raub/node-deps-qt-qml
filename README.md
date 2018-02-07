@@ -52,8 +52,8 @@ to such directories have to be compiled into the node-addon with `rpath` option.
 
 ```javascript
 	'variables': {
-		'qt_core_bin' : '<!(node -e "require(\'deps-qt-qml-raub\').core()")',
-		'qt_gui_bin'  : '<!(node -e "require(\'deps-qt-qml-raub\').gui()")',
+		'qt_core_bin' : '<!(node -e "require(\'deps-qt-qml-raub\').core.bin()")',
+		'qt_gui_bin'  : '<!(node -e "require(\'deps-qt-qml-raub\').gui.bin()")',
 		'qt_qml_bin'  : '<!(node -e "require(\'deps-qt-qml-raub\').bin()")',
 	},
 	...
