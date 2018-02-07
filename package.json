@@ -1,8 +1,8 @@
 {
-	"name": "node-deps-qt-qml-raub",
+	"name": "deps-qt-qml-raub",
 	"author": "Luis Blanco <raubtierxxx@gmail.com>",
-	"description": "Common binary dependencies for qml-dependent modules.",
-	"version": "5.9.1",
+	"description": "Qt QML dynamic libraries for dependent Node.js addons",
+	"version": "0.0.1",
 	"main": "index.js",
 	"keywords": [
 		"qt",
@@ -26,6 +26,7 @@
 		"url": "https://github.com/raub/node-deps-qt-qml"
 	},
 	"dependencies": {
-		"node-deps-qt-gui-raub": "5.9.1"
+		"deps-qt-gui-raub": "0.0.3",
+		"addon-tools-raub": "0.0.7"
 	}
 }
