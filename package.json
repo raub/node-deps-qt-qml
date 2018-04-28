@@ -1,8 +1,9 @@
 {
+	"author": "Luis Blanco <luisblanco1337@gmail.com>",
 	"name": "deps-qt-qml-raub",
-	"author": "Luis Blanco <raubtierxxx@gmail.com>",
-	"description": "Qt QML dynamic libraries for dependent Node.js addons",
 	"version": "0.0.2",
+	"description": "Qt QML dynamic libraries for dependent Node.js addons",
+	"license": "MIT",
 	"main": "index.js",
 	"keywords": [
 		"qt",
@@ -13,17 +14,20 @@
 		"library",
 		"binary"
 	],
+	"engines": {
+		"node": ">=8.11.1",
+		"npm": ">=5.6.0"
+	},
 	"maintainers": [
 		{
 			"name": "Luis Blanco",
-			"email": "raubtierxxx@gmail.com",
+			"email": "luisblanco1337@gmail.com",
 			"skype": "rauber666"
 		}
 	],
-	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/raub/node-deps-qt-qml"
+		"url": "https://github.com/node-3d/deps-qt-qml-raub.git"
 	},
 	"dependencies": {
 		"deps-qt-gui-raub": "0.0.4",
