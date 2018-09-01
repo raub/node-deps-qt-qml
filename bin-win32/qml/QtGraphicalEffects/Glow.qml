@@ -52,7 +52,7 @@ import QtGraphicalEffects.private 1.0
     The Glow effect blurs the alpha channel of the source and colorizes it
     with \l {Glow::color}{color} and places it behind the source, resulting in a halo or glow
     around the object. The quality of the blurred edge can be controlled using
-    \l samples and \l radius and the strenght of the glow can be changed using
+    \l samples and \l radius and the strength of the glow can be changed using
     \l spread.
 
     \table
@@ -105,7 +105,7 @@ Item {
         Depending on the radius value, value of the \l{Glow::samples}{samples}
         should be set to sufficiently large to ensure the visual quality.
 
-        The ideal blur is acheived by selecting \c samples and \c radius such
+        The ideal blur is achieved by selecting \c samples and \c radius such
         that \c {samples = 1 + radius * 2}, such as:
 
         \table
@@ -171,7 +171,7 @@ Item {
     property alias samples: dps.samples
 
     /*!
-        This property defines how large part of the glow color is strenghtened
+        This property defines how large part of the glow color is strengthened
         near the source edges.
 
         The values range from 0.0 to 1.0. By default, the property is set to \c

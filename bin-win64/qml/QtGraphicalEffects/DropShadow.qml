@@ -104,7 +104,7 @@ Item {
         Radius defines the softness of the shadow. A larger radius causes the
         edges of the shadow to appear more blurry.
 
-        The ideal blur is acheived by selecting \c samples and \c radius such
+        The ideal blur is achieved by selecting \c samples and \c radius such
         that \c {samples = 1 + radius * 2}, such as:
 
         \table
@@ -273,7 +273,7 @@ Item {
     property alias verticalOffset: dbs.verticalOffset
 
     /*!
-        This property defines how large part of the shadow color is strenghtened
+        This property defines how large part of the shadow color is strengthened
         near the source edges.
 
         The value ranges from 0.0 to 1.0. By default, the property is set to \c

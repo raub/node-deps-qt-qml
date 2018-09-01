@@ -40,76 +40,39 @@ import QtQuick.Layouts 1.0
 
 Section {
     id: section
+    caption: qsTr("Button")
 
     SectionLayout {
         Label {
-            text: qsTr("Text")
-            tooltip: qsTr("The text displayed on the %1.").arg(section.caption.toLowerCase())
-        }
-        SecondColumnLayout {
-            LineEdit {
-                backendValue: backendValues.text
-                Layout.fillWidth: true
-            }
-        }
-
-        Label {
-            text: qsTr("Highlighted")
-            tooltip: qsTr("Whether the %1 is highlighted.").arg(section.caption.toLowerCase())
-        }
-        SecondColumnLayout {
-            CheckBox {
-                text: backendValues.highlighted.valueToString
-                backendValue: backendValues.highlighted
-                Layout.fillWidth: true
-            }
-        }
-
-        Label {
-            visible: checkable
-            text: qsTr("Checkable")
-            tooltip: qsTr("Whether the %1 is checkable.").arg(section.caption.toLowerCase())
-        }
-        SecondColumnLayout {
-            CheckBox {
-                text: backendValues.checkable.valueToString
-                backendValue: backendValues.checkable
-                Layout.fillWidth: true
-            }
-        }
-
-        Label {
-            text: qsTr("Checked")
-            tooltip: qsTr("Whether the %1 is checked.").arg(section.caption.toLowerCase())
-        }
-        SecondColumnLayout {
-            CheckBox {
-                text: backendValues.checked.valueToString
-                backendValue: backendValues.checked
-                Layout.fillWidth: true
-            }
-        }
-
-        Label {
-            text: qsTr("Exclusive")
-            tooltip: qsTr("Whether the %1 is exclusive.").arg(section.caption.toLowerCase())
-        }
-        SecondColumnLayout {
-            CheckBox {
-                text: backendValues.autoExclusive.valueToString
-                backendValue: backendValues.autoExclusive
-                Layout.fillWidth: true
-            }
-        }
-
-        Label {
-            text: qsTr("Repeat")
-            tooltip: qsTr("Whether the %1 repeats while pressed and held down.").arg(section.caption.toLowerCase())
+            text: qsTr("AutoRepeat")
+            tooltip: qsTr("Whether the button repeats pressed(), released() and clicked() signals while the button is pressed and held down.")
         }
         SecondColumnLayout {
             CheckBox {
                 text: backendValues.autoRepeat.valueToString
                 backendValue: backendValues.autoRepeat
+                Layout.fillWidth: true
+            }
+        }
+        Label {
+            text: qsTr("Flat")
+            tooltip: qsTr("Whether the button is flat.")
+        }
+        SecondColumnLayout {
+            CheckBox {
+                text: backendValues.flat.valueToString
+                backendValue: backendValues.flat
+                Layout.fillWidth: true
+            }
+        }
+        Label {
+            text: qsTr("Highlighted")
+            tooltip: qsTr("Whether the button is highlighted.")
+        }
+        SecondColumnLayout {
+            CheckBox {
+                text: backendValues.highlighted.valueToString
+                backendValue: backendValues.highlighted
                 Layout.fillWidth: true
             }
         }
