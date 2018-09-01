@@ -2,17 +2,21 @@
 
 This is a part of [Node3D](https://github.com/node-3d) project.
 
+![NPM](https://nodei.co/npm/deps-qt-qml-raub.png?compact=true)
+
+![Build Status](https://api.travis-ci.org/node-3d/deps-qt-qml-raub.svg?branch=master)
+
+> npm i -s deps-qt-qml-raub
+
 
 ## Synopsis
 
-* Platforms: win x32/x64, linux x32/x64, mac x64.
+This dependency package is distributing **Qt Qml 5.11.1**
+binaries through **NPM** for **Node.js** addons.
+
+* Platforms: win x32/x64, linux x64, mac x64.
 * Library: Qt.
 * Linking: dynamic dll-type.
-
-
-## Install
-
-`npm i -s deps-qt-qml-raub`
 
 
 ## Usage
