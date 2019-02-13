@@ -49,7 +49,11 @@ Adjust `binding.gyp`:
 			'conditions': [
 				[
 					'OS=="linux" or OS=="mac"', {
-						'libraries': ['-Wl,-rpath,<(qt_core_bin):<(qt_gui_bin):<(qt_qml_bin)'],
+						'libraries': [
+							'-Wl,-rpath,<(qt_core_bin)',
+							'-Wl,-rpath,<(qt_gui_bin)',
+							'-Wl,-rpath,<(qt_qml_bin)',
+						],
 					}
 				],
 				[
@@ -73,22 +77,6 @@ Adjust `binding.gyp`:
 							'<(qt_qml_bin)/libQt5QuickControls2.so.5',
 							'<(qt_qml_bin)/libQt5QuickTemplates2.so.5',
 							'<(qt_qml_bin)/libQt5QuickWidgets.so.5',
-						],
-					}
-				],
-				[
-					'OS=="mac"', {
-						'libraries': [
-							'<(qt_core_bin)/QtCore',
-							'<(qt_core_bin)/QtNetwork',
-							'<(qt_core_bin)/QtDBus',
-							'<(qt_gui_bin)/QtGui',
-							'<(qt_gui_bin)/QtWidgets',
-							'<(qt_qml_bin)/QtQml',
-							'<(qt_qml_bin)/QtQuick',
-							'<(qt_qml_bin)/QtQuickControls2',
-							'<(qt_qml_bin)/QtQuickTemplates2',
-							'<(qt_qml_bin)/QtQuickWidgets',
 						],
 					}
 				],
@@ -124,17 +112,6 @@ Preload libraries:
 	dlopen("libQt5QuickControls2.so.5", RTLD_LAZY);
 	dlopen("libQt5QuickTemplates2.so.5", RTLD_LAZY);
 	dlopen("libQt5QuickWidgets.so.5", RTLD_LAZY);
-	#elif __APPLE__
-	dlopen("QtCore", RTLD_LAZY);
-	dlopen("QtNetwork", RTLD_LAZY);
-	dlopen("QtDBus", RTLD_LAZY);
-	dlopen("QtGui", RTLD_LAZY);
-	dlopen("QtWidgets", RTLD_LAZY);
-	dlopen("QtQml", RTLD_LAZY);
-	dlopen("QtQuick", RTLD_LAZY);
-	dlopen("QtQuickControls2", RTLD_LAZY);
-	dlopen("QtQuickTemplates2", RTLD_LAZY);
-	dlopen("QtQuickWidgets", RTLD_LAZY);
 	#endif
 ```
 
