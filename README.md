@@ -99,7 +99,7 @@ Adjust `binding.gyp`:
 Preload libraries:
 
 ```cpp
-#ifndef WIN32
+#ifdef __linux__
 	#include <dlfcn.h>
 #endif
 
