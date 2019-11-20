@@ -7,7 +7,7 @@ This is a part of [Node3D](https://github.com/node-3d) project.
 [![Build Status](https://api.travis-ci.com/node-3d/deps-qt-qml-raub.svg?branch=master)](https://travis-ci.com/node-3d/deps-qt-qml-raub)
 [![CodeFactor](https://www.codefactor.io/repository/github/node-3d/deps-qt-qml-raub/badge)](https://www.codefactor.io/repository/github/node-3d/deps-qt-qml-raub)
 
-> npm i -s deps-qt-qml-raub
+> npm i deps-qt-qml-raub
 
 
 ## Synopsis
